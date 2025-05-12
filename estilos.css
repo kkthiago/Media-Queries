@@ -27,24 +27,24 @@
     padding: 1rem 0;
   }
   
-  .header-content {
+  .header__content {
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
   }
   
-  .logo {
+  .header__logo {
     font-size: 1.8rem;
   }
   
-  .menu {
+  .nav__menu {
     display: flex;
     gap: 1rem;
     list-style: none;
   }
   
-  .menu a {
+  .nav__link {
     color: white;
     text-decoration: none;
     font-weight: bold;
@@ -56,33 +56,63 @@
     text-align: center;
     padding: 20vh 1rem;
   }
+
+  .banner__title {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.banner__description {
+  font-size: 1.2rem;
+  margin-top: 1rem;
+}
+
+.depoimentos {
+  text-align: center;
+  padding: 2rem 0;
+}
+
+.depoimentos__title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+}
+
+.depoimentos__list {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.depoimentos__quote {
+  font-style: italic;
+  border-left: 4px solid var(--cor-secundaria);
+  padding-left: 1rem;
+  margin: 1.5rem 0;
+  color: var(--texto);
+}f
   
-  section {
-    margin-top: 4rem;
-  }
-  
-  .grid-servicos {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: var(--espacamento);
-  }
-  
-  .servico {
-    background-color: var(--cor-secundaria);
-    color: white;
-    padding: 2rem;
-    border-radius: 0.5rem;
-    text-align: center;
-  }
-  
-  form {
+.servicos__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: var(--espacamento);
+}
+
+.servicos__item {
+  background-color: var(--cor-secundaria);
+  color: white;
+  padding: 2rem;
+  border-radius: 0.5rem;
+  text-align: center;
+}
+  .contato__form {
     display: flex;
     flex-direction: column;
     gap: 1rem;
     max-width: 500px;
   }
   
-  input, textarea {
+  .contato__input,
+  .contato__textarea {
     padding: 0.75rem;
     border: 1px solid #ccc;
     border-radius: 0.5rem;
@@ -90,7 +120,7 @@
     width: 100%;
   }
   
-  button {
+  .contato__button {
     background-color: var(--cor-secundaria);
     color: white;
     border: none;
@@ -101,7 +131,7 @@
     transition: background-color 0.3s ease;
   }
   
-  button:hover {
+  .contato__button:hover {
     background-color: #2563eb;
   }
   

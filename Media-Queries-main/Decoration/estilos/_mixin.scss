@@ -1,0 +1,34 @@
+@use "variaveis";
+
+@mixin fonte_titulo{
+    font-family: variaveis.$fonte__secundaria;
+    font-weight: bold;
+}
+
+@mixin janela_caixa{
+    margin: 25px 30px 30px;
+    padding: calc(variaveis.$espacamento_padrao * 35);
+    border-radius:15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 1px 4px 30px black;
+    gap: 40px;
+}
+
+@mixin janela{
+    width: 100%;
+    border-radius:15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 1px 4px 30px black;
+    gap: 40px;
+}
+
+
+@mixin blocos_distintos{
+    padding: calc(variaveis.$espacamento_padrao * 10);
+    font-size: variaveis.$fonte_tamanho;
+    text-align: center;
+}

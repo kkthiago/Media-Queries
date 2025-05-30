@@ -1,0 +1,7 @@
+.contato{
+    &__button{
+        :hover{
+            background-color: variaveis.$cor_primaria;
+        }
+    }
+}

@@ -1,0 +1,66 @@
+@use "variaveis";
+@use "mixin";
+@use "sass:math";
+
+.header__content{
+    height: 100%;
+
+    background-color: variaveis.$cor_primaria;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: calc(variaveis.$espacamento_padrao * 20);
+    
+}
+
+.header__logo{
+    color: variaveis.$cor_terciaria;
+    @include mixin.fonte_titulo;
+    
+}
+
+.nav__menu {
+    @include mixin.fonte_titulo;
+    color: variaveis.$cor_terciaria;
+    list-style: none;
+    display: flex;
+    justify-content:space-evenly;
+    text-decoration:none;
+    gap: 20px;
+    
+    &:hover{
+        text-decoration: underline;
+        color: #1b63e8
+    }
+}
+
+.banner{
+    @include mixin.janela_caixa;
+    background-color: variaveis.$cor_terciaria;
+    &__textos{
+        @include mixin.fonte_titulo;
+        color: variaveis.$cor_secundaria;
+    }
+}
+
+.sobre{
+    @include mixin.blocos_distintos;
+}
+
+.servicos{
+    @include mixin.janela_caixa;
+    @include mixin.fonte_titulo; 
+}
+
+.depoimentos{
+    @include mixin.blocos_distintos;
+    margin-bottom: 20px;
+}
+
+.contato{
+    @include mixin.janela;
+    @include mixin.blocos_distintos;
+    background-color: variaveis.$cor_terciaria;
+    color: variaveis.$cor_secundaria;
+}
+

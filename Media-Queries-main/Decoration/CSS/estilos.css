@@ -1,0 +1,95 @@
+* {
+  font-family: Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.header__content {
+  height: 100%;
+  background-color: #e2c43b;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+.header__logo {
+  color: #161609;
+  font-family: Georgia, sans-serif;
+  font-weight: bold;
+}
+
+.nav__menu {
+  font-family: Georgia, sans-serif;
+  font-weight: bold;
+  color: #161609;
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+  text-decoration: none;
+  gap: 20px;
+}
+.nav__menu:hover {
+  text-decoration: underline;
+  color: #1b63e8;
+}
+
+.banner {
+  margin: 25px 30px 30px;
+  padding: 35px;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 1px 4px 30px black;
+  gap: 40px;
+  background-color: #161609;
+}
+.banner__textos {
+  font-family: Georgia, sans-serif;
+  font-weight: bold;
+  color: #f3f3ea;
+}
+
+.sobre {
+  padding: 10px;
+  font-size: 16px;
+  text-align: center;
+}
+
+.servicos {
+  margin: 25px 30px 30px;
+  padding: 35px;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 1px 4px 30px black;
+  gap: 40px;
+  font-family: Georgia, sans-serif;
+  font-weight: bold;
+}
+
+.depoimentos {
+  padding: 10px;
+  font-size: 16px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.contato {
+  width: 100%;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 1px 4px 30px black;
+  gap: 40px;
+  padding: 10px;
+  font-size: 16px;
+  text-align: center;
+  background-color: #161609;
+  color: #f3f3ea;
+}
+
+/*# sourceMappingURL=estilos.css.map */

@@ -1,0 +1,9 @@
+@use "variaveis";
+@use "mixin";
+@use "sass:math";
+
+*{
+  font-family: variaveis.$fonte__primaria;
+  margin: 0;
+  padding: 0;
+}
